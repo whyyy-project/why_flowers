@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/flowers.png" type="image/x-icon" />
     <title>Flowers</title>
+
   </head>
   <body>
+<audio id="myAudio">
+  <source src="https://drive.google.com/file/d/1UrlU7AbzOAgnXxcXJBa_Kw6bsx92nqdb/view?usp=drivesdk" type="audio/mpeg">
+</audio>
     <div class="greetings">
 
       <span>H</span>
@@ -29,5 +33,13 @@
         <a href="./flower.html">Klik disini</a>
       </button>
     </div>
+<script>
+  var audio = document.getElementById("myAudio");
+  audio.addEventListener("timeupdate", function() {
+    if (audio.currentTime >= 10) {
+      window.location = "./flower.html";
+    }
+  });
+</script>
   </body>
 </html>
