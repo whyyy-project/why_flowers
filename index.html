@@ -10,10 +10,6 @@
 
   </head>
   <body>
-<audio id="myAudio" controls autoplay>
-Asu
-  <source src="https://drive.google.com/file/d/1UrlU7AbzOAgnXxcXJBa_Kw6bsx92nqdb/view?usp=drivesdk" type="audio/mp3">
-</audio>
     <div class="greetings">
       <span>H</span>
       <span>A</span>
@@ -33,13 +29,5 @@ Asu
         <a href="./flower.html">Klik disini</a>
       </button>
     </div>
-<script>
-  var audio = document.getElementById("myAudio");
-  audio.addEventListener("timeupdate", function() {
-    if (audio.currentTime >= 10) {
-      window.location = "./flower.html";
-    }
-  });
-</script>
   </body>
 </html>
